@@ -1,0 +1,8 @@
+.single-container{
+    display: grid;
+    place-items: center; 
+}
+
+.content{
+    margin-left: 500px;
+}

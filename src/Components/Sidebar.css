@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sidebar-container{
+    position: fixed;
+    width: 117px;
+    height: 750px;
+    left: 0px;
+    top: 5px;
+    border-radius:20px ;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(81px);
+    -webkit-border-radius:20px ;
+    -moz-border-radius:20px ;
+    -ms-border-radius:20px ;
+    -o-border-radius:20px ;
+}
+
+.circle-profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: rgb(230, 230, 230);
+   position: fixed;
+   left: 30%;
+   top: 2%;
+}
+.sidebar-nav{
+    position: fixed;
+    top: 25%;
+    left: 40%;
+    background-color: transparent;
+    background-color: transparent;
+}
+
+.sidebar-nav ul{
+    background-color: transparent;
+}
+ .sidebar-nav ul li{
+    margin-bottom: 70px;
+    background-color: transparent;
+ }
+
+ .sidebar-nav ul li i{
+    font-size: x-large;
+    background-color: transparent;
+ }
+
+ .sidebar-nav ul li:hover{
+    
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 768px){
+    .sidebar-container{
+        position: fixed;
+        width: 70px;
+        height: 350px;
+        top: 72%;
+        left: 41%;
+        transform: rotate(90deg);
+        border-radius:20px ;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(81px);
+        -webkit-border-radius:20px ;
+        -moz-border-radius:20px ;
+        -ms-border-radius:20px ;
+        -o-border-radius:20px ;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+}
+
+    .sidebar-nav ul li{
+        margin-bottom: 30px;
+        background-color: transparent;
+    
+     }
+
+     .sidebar-nav ul {
+        transform: rotateX(180deg);
+        -webkit-transform: rotateX(180deg);
+        -moz-transform: rotateX(180deg);
+        -ms-transform: rotateX(180deg);
+        -o-transform: rotateX(180deg);
+}
+
+.sidebar-nav ul li {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+}

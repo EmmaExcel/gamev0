@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --active:#ED9936;
+    --primary-color:#FFFF;
+    --font--family:'Poppins';
+}
+
+.active{
+    color: #ED9936;
+}
+
+.nav-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.nav-center nav ul{
+    display: flex;
+    gap: 30px;
+}
+
+.options{
+    display: flex;
+    gap: 30px;
+}
+
+a:hover,i:hover{
+    color: var(--active);
+}
+
+@media only screen and (max-width: 768px){
+    .category{
+        display: none;
+    }
+}

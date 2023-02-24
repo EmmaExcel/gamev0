@@ -1,0 +1,195 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+  }
+  
+  .movie-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    margin-top: 20px;
+    gap:40px;
+   /*  overflow: hidden; */
+    
+  }
+  
+  .grid.desp {
+    grid-area: 1 / col4-start / last-line / 6;
+    
+    justify-self: center;
+    position: fixed;
+    right: 0%;
+    height: 650px;
+    width: 350px;
+    margin-right: 20px;
+    background: linear-gradient(
+        180deg,
+        rgba(217, 217, 217, 0) 0%,
+        rgba(217, 217, 217, 0.1) 100%
+      );
+      backdrop-filter: blur(163px);
+    
+  }
+  
+  .movie-img-container {
+    width: 900px;
+    height: 380px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-left: 170px;
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    animation-name: movie;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes movie {
+    0% {
+      background-image: url("https://flxt.tmsimg.com/assets/p18320269_b_v13_ah.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+  
+    25% {
+        background-size: cover;
+        background-position: center;
+        
+        background-image: url("https://m.media-amazon.com/images/M/MV5BYmMxZWRiMTgtZjM0Ny00NDQxLWIxYWQtZDdlNDNkOTEzYTdlXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg");
+    }
+  
+    50% {
+        background-position: center;
+        background-size: cover;
+        
+      background-image: url("https://m.media-amazon.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_FMjpg_UX1000_.jpg");
+    }
+  
+    100% {
+        background-position: center;
+        background-size: cover;
+        
+      background-image: url("https://i.ytimg.com/vi/8pR0o2fGyHg/maxresdefault.jpg");
+    }
+  }
+  
+  .grid.slider {
+    width: 790px;
+    height: 253px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  
+    background: linear-gradient(
+      180deg,
+      rgba(217, 217, 217, 0) 0%,
+      rgba(217, 217, 217, 0.1) 100%
+    );
+    backdrop-filter: blur(163px);
+    margin-left: 0px;
+   
+    padding: 20px;
+    grid-column-start: 1;
+    grid-column-end: span col4-start;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+  }
+  
+  .grid.slider img {
+    width: 240px;
+    height: 200px;
+    background-position: center;
+    background-size: contain;
+  
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+  
+  .slider-content{
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+      display: grid;
+      place-items: center;
+  }
+  
+  
+  .detail{
+      width: 124px;
+      height: 30px;
+      border-radius:20px ;
+      position: fixed;
+      top: 160px;
+      border: none;
+      outline: none;
+      background: linear-gradient(    180deg,    rgba(160, 160, 160, 0.716) 0%,    rgba(187, 184, 184, 0.107) 100%  );
+      backdrop-filter: blur(163px);
+      -webkit-border-radius:20px ;
+      -moz-border-radius:20px ;
+      -ms-border-radius:20px ;
+      -o-border-radius:20px ;
+      cursor: pointer;
+  }
+  
+  .detail i{
+      margin-left: 10px;
+  }
+  
+  .slider-header{
+      margin-bottom: 20px;
+  }
+
+  
+.movie-desp-image{
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+
+.movie-desp-image img{
+  width: 307px;
+  height: 244px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.movie-title,.movie-title h2,.year,.year h4{
+  background-color: transparent;
+  
+}
+
+.movie-title{
+  margin-left: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.movie-description, .movie-description p{
+  background-color: transparent;
+}
+
+.movie-description{
+  display: grid;
+  place-items: center;
+  width: 320px;
+  margin-left: 30px;
+  margin-top: 50px;
+}
